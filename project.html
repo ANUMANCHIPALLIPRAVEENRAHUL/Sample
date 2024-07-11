@@ -1,0 +1,55 @@
+<html>
+<head>
+    <title>Project Showcase</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <marquee>
+            <h1>Swarnandhra College of Engineering and Technology</h1>
+        </marquee>
+    </header>
+    <h1 id="title">Student Project Showcase</h1>
+    <main>
+        <section class="project-form">
+            <h2>Add Your Project</h2>
+            <form id="projectForm">
+                <label for="projectTitle">Project Title :</label>
+                <input type="text" id="projectTitle" name="projectTitle" required>
+                <label for="projectDescription">Description :</label>
+                <textarea id="projectDescription" name="projectDescription" required></textarea>
+                <label for="projectLink">Live Demo/Repository Link :</label>
+                <input type="url" id="projectLink" name="projectLink" required>
+                <button type="submit">Add Project</button>
+            </form>
+        </section>
+        <section class="project-form">
+            <h2>Project Showcase</h2>
+            <div class="projects">
+                <!--Project items will be added here-->
+            </div>
+        </section>
+    </main>
+    <footer>
+        <b>&copy; 2024 Student Project Showcase</b>
+    </footer>
+    <script>
+        document.getElementById('projectForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            const projectTitle = document.getElementById('projectTitle').value;
+            const projectDescription = document.getElementById('projectDescription').value;
+            const projectLink = document.getElementById('projectLink').value;
+            const projects = document.querySelector('.projects');
+            const projectItem = document.createElement('div');
+            projectItem.classList.add('project-item');
+            projectItem.innerHTML = `
+                <h3>${projectTitle}</h3>
+                <p>${projectDescription}</p>
+                <a href="${projectLink}" target="_blank">View Project</a>
+            `;
+            projects.appendChild(projectItem);
+            document.getElementById('projectForm').reset();
+        });
+    </script>
+</body>
+</html>

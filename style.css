@@ -1,0 +1,117 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: rgb(231, 235, 238);
+}
+header {
+    background-color: rgb(53, 115, 181);
+    color: #fff;
+    height: 80px;
+    display: flex;
+    box-shadow: 0 0 5px rgb(53, 115, 181);
+}
+#title {
+    text-align: center;
+    box-shadow: 0 0 1px rgb(53, 115, 181);
+    height: 50px;
+    padding-top: 12px;
+    margin-top: 15px;
+    background-color: whitesmoke;
+}
+#title:hover {
+    box-shadow: 0 0 5px rgb(53, 115, 181);
+}
+main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 10px;
+    margin-top: 0px;
+}
+section {
+    flex: 1;
+    max-width: 600px;
+    margin: 0px auto;
+    background-color: #fff;
+    padding: 25px;
+    box-shadow: 0 0px 5px rgba(0,0,0,0.1);
+    border-radius: 8px;
+}
+section:hover {
+    box-shadow: 0 0px 5px rgb(53, 115, 181);
+}
+h2 {
+    margin-top: 0;
+}
+form {
+    display: flex;
+    flex-direction: column;
+}
+label {
+    margin-top: 25px;
+    font-weight: bold;
+}
+input,textarea {
+    margin-top: 10px;
+    padding: 10px;
+    font-size: 15px;
+    border: 1px solid rgb(53, 115, 181);
+    border-radius: 4px;
+}
+button {
+    margin-top: 1.5rem;
+    padding: 0.75rem;
+    font-size: 1rem;
+    background-color: rgb(53, 115, 181);
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+button:hover {
+    background-color: white;
+    box-shadow: 0 0 5px rgb(53, 115, 181);
+    color: rgb(53, 115, 181);
+}
+.project-showcase {
+    margin-top: 2rem;
+}
+.projects {
+    margin-top: 1rem;
+}
+.project-item {
+    background-color: #f9f9f9;
+    padding: 10px;
+    margin-bottom: 1rem;
+    border-radius: 4px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+}
+.project-item h3 {
+    margin-top: 0;
+}
+.project-item a {
+    display: inline-block;
+    margin-top: 0.5rem;
+    padding: 0.5rem 1rem;
+    background-color: rgb(53, 115, 181);
+    color: #fff;
+    text-decoration: none;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+}
+.project-item a:hover {
+    background-color: white;
+    box-shadow: 0 0 5px rgb(53, 115, 181);
+    color: rgb(53, 115, 181);
+}
+footer {
+    background-color: rgb(53, 115, 181);
+    color: #fff;
+    text-align: center;
+    padding: 30px;
+    width: auto;
+    bottom: 0;
+    margin-top: 10px;
+}
